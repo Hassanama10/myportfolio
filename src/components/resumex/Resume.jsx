@@ -255,6 +255,13 @@ const ExperienceSection = () => (
           description:
             "Implémenter un système de gestion des réservations avec fonctionnalités de recherche et de paiement.",
         },
+        {
+          year: "2023 - 2024",
+          title: "Projet pour un site de location de voitures",
+          company: "ISTA NTIC SYBA Marrakech",
+          description:
+            "Implémenter un système de gestion des réservations avec fonctionnalités de recherche et de paiement.",
+        },
       ].map((item, index) => (
         <motion.div
           key={index}

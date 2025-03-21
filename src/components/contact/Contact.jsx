@@ -40,7 +40,7 @@ const Contact = () => {
     if (!validateForm()) return;
 
     try {
-      const response = await fetch("https://formspree.io/f/mwpprnjy", {
+      const response = await fetch("https://formspree.io/f/xdkeelap", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -58,14 +58,14 @@ const Contact = () => {
   };
 
   const socialLinks = [
-    { Icon: Facebook, href: "#", bgColor: "bg-blue-600" },
+    { Icon: Facebook, href: "", bgColor: "bg-blue-600" },
     { Icon: Github, href: "#", bgColor: "bg-gray-800" },
     {
       Icon: Instagram,
-      href: "#",
+      href: "https://www.instagram.com/hassan_amagroud/",
       bgColor: "bg-gradient-to-r from-purple-500 to-pink-500",
     },
-    { Icon: Linkedin, href: "#", bgColor: "bg-blue-500" },
+    { Icon: Linkedin, href: "https://www.linkedin.com/in/hassan-amagroud-6a0952290", bgColor: "bg-blue-500" },
     { Icon: Twitter, href: "#", bgColor: "bg-sky-500" },
     { Icon: Youtube, href: "#", bgColor: "bg-red-600" },
   ];

@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { FaWhatsapp, FaTimes } from "react-icons/fa"
 import { motion, AnimatePresence } from "framer-motion"
+import logo from "../../../public/logo.jpg"
 
 export default function WhatsappContact() {
   const [isOpen, setIsOpen] = useState(false)
@@ -51,19 +52,25 @@ export default function WhatsappContact() {
               <p className="text-gray-600 text-sm mb-4">Cliquez pour ouvrir une nouvelle conversation :</p>
 
               <a
-                href="https://wa.me/+212675775884"
+                href="https://wa.me/+212655549039"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-between bg-white p-3 rounded-lg border-l-4 border-green-500 hover:bg-gray-50 transition-colors"
               >
                 <div className="flex items-center gap-3">
                   <div className="flex-shrink-0">
-                    {/* Replace with your actual logo */}
-                    <div className="w-10 h-10  bg-violet-600/20 rounded flex items-center justify-center">
-                      <span className="text-black font-bold text-xs">M.S</span>
+                    {/* Using the provided image */}
+                    <div className="w-10 h-10 rounded-full overflow-hidden">
+                      <img 
+                        src={logo} 
+                        alt="Mr HASSAN" 
+                        width={40} 
+                        height={40}
+                        className="object-cover"
+                      />
                     </div>
                   </div>
-                  <span className="font-medium text-gray-800">Mr Sari </span>
+                  <span className="font-medium text-gray-800">Mr HASSAN</span>
                 </div>
                 <FaWhatsapp size={20} className="text-green-500" />
               </a>
@@ -120,7 +127,7 @@ export default function WhatsappContact() {
             exit={{ opacity: 0, x: 20 }}
             transition={{ delay: 0.5 }}
           >
-            <div className="text-gray-800 font-medium">Need help??</div>
+            <div className="text-gray-800 font-medium">Need help?</div>
             <div className="text-gray-600 text-sm">Contact us</div>
             <div className="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 rotate-45 w-3 h-3 bg-white"></div>
           </motion.div>
@@ -129,4 +136,3 @@ export default function WhatsappContact() {
     </>
   )
 }
-
