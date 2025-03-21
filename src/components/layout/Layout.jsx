@@ -175,7 +175,7 @@ const Layout = () => {
           }}
         >
           <p className="text-mm font-light" style={{ fontWeight: "600" }}>
-            &copy; {new Date().getFullYear()} -- Mohamed Sari -- Built with ❤️
+            &copy; {new Date().getFullYear()} -- Hassan Amagroud' -- Built with ❤️
             and React - tailwind - three js .
           </p>
         </footer>
